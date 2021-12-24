@@ -34,6 +34,10 @@ class Book:
         if is_point_ok and is_age_ok and is_rent_available:
             # 이 책의 대여자가 user다 라고 기록해야하니까 코드를 풀어쓰기
             self.rent_user = user
+            
+            # 빌려간 사람의 포인트도 대여료만큼 차감
+            user.point -= self.rent_fee
+            
             return True
         else:
             return False
