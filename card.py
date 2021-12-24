@@ -14,3 +14,10 @@ class Card:
         self.pattern = pattern
         self.number = number
         
+        
+    #  이 카드 클래스 자체에 대한 설명을 출력하는 메쏘드
+    @classmethod    # 이 메쏘드가 클래스 자체의 기능임을 나타내줌
+    def print_card_class_info(cls):     # cls : class 종류 자체가 뭔지를 알려주는 역할
+        print('이 카드는 포커카드를 표현하는 클래스입니다.')
+        print(f'우리가 만든 카드의 가로 길이는 {cls.width} 입니다.')   # 해당 클래스의 클래스 변수를 끌어다 쓰려는 상황
+        print(f'세로 길이는 {cls.height} 입니다.')

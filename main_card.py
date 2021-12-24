@@ -17,3 +17,7 @@ print(f'하트7의 가로 길이 : {card2.width}')
 
 # 아래처럼 쓴다. 클래스 자체의 변수
 print(f'카드 전체의 가로길이 : {Card.width}')
+
+
+# 카드 클래스 자체의 기능 (클래스 설명 기능 실행)
+Card.print_card_class_info()
