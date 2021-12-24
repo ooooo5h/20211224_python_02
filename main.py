@@ -21,3 +21,8 @@ else:
 book2 = Book('고가의책', 20000, 15)
 print(book2.rent_book_to_user(user1))
 user1.print_user_info()
+
+book3 = Book('성인도서', 1000, 19)
+
+user2 = User('미성년자', 2010, 50000)
+book3.rent_book_to_user(user2)
